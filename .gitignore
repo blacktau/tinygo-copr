@@ -1,0 +1,9 @@
+# local build artifacts — never committed / pushed
+*.rpm
+*.tar.gz
+*.tar.xz
+/rpmbuild/
+/x86_64/
+/result/
+# local superpowers artifacts
+/.superpowers/
