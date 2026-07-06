@@ -28,6 +28,11 @@ ExclusiveArch:  x86_64
 
 Provides:       tinygo = %{version}-%{release}
 
+# TinyGo shells out to the Go toolchain at build time (standard library, go
+# command); without it `tinygo build` fails with "go version <unknown>".
+# golang also pulls in gcc, needed for linking native/host targets.
+Requires:       golang
+
 %description
 TinyGo is a Go compiler for small places: microcontrollers, WebAssembly, and
 command-line tools. This package repackages the official upstream prebuilt
