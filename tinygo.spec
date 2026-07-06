@@ -43,7 +43,7 @@ Linux binary release; it is self-contained and does not use the system LLVM.
 mkdir -p %{buildroot}%{_libdir}/tinygo
 cp -a . %{buildroot}%{_libdir}/tinygo/
 mkdir -p %{buildroot}%{_bindir}
-ln -s %{_libdir}/tinygo/bin/tinygo %{buildroot}%{_bindir}/tinygo
+ln -sr %{buildroot}%{_libdir}/tinygo/bin/tinygo %{buildroot}%{_bindir}/tinygo
 
 %files
 %{_libdir}/tinygo
