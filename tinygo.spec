@@ -14,7 +14,7 @@
 %global __requires_exclude_from ^%{_libdir}/tinygo/.*$
 
 Name:           tinygo
-Version:        0.41.1
+Version:        0.44.0
 Release:        1%{?dist}
 Summary:        Go compiler for small places
 
@@ -55,5 +55,8 @@ ln -sr %{buildroot}%{_libdir}/tinygo/bin/tinygo %{buildroot}%{_bindir}/tinygo
 %{_bindir}/tinygo
 
 %changelog
+* Sat Nov 07 2026 Sean Garrett <sean+claude@blacktau.com> - 0.44.0-1
+- Update to upstream 0.44.0
+
 * Mon Jul 06 2026 Sean Garrett <sean+claude@blacktau.com> - 0.41.1-1
 - Initial COPR package repackaging the upstream 0.41.1 Linux binary release
